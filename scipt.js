@@ -33,3 +33,9 @@ const emailValidation = function (email) {
 };
 console.log(emailValidation('Test@Gmail.com')); // If a user types capital letter then it will be converted to lower letter, but mispelling will lead to invalid email
 // Email Lowercase correction validation function end
+
+// ReplaceAll was introduced in ES2021 start
+const priceGb = `224,99£`;
+const priceDollar = priceGb.replaceAll(',', '.').replaceAll('£', '$');
+console.log(priceGb, `&`, priceDollar);
+// ReplaceAll was introduced in ES2021 start
