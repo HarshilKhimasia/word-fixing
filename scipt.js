@@ -23,3 +23,13 @@ const wordCorrect = function (word) {
 console.log(wordCorrect('haRsHil'));
 // Function for correcting any word end
 //-----------------------------**********************---------------------------------//
+
+// Email Lowercase correction validation function start
+const correctEmail = 'test@gmail.com';
+const emailValidation = function (email) {
+  const inputEmail = email.toLowerCase().trim();
+  const valid = inputEmail === correctEmail ? `Valid Email` : `Invalid Email`;
+  return valid;
+};
+console.log(emailValidation('Test@Gmail.com')); // If a user types capital letter then it will be converted to lower letter, but mispelling will lead to invalid email
+// Email Lowercase correction validation function end
