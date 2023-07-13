@@ -38,4 +38,4 @@ console.log(emailValidation('Test@Gmail.com')); // If a user types capital lette
 const priceGb = `224,99£`;
 const priceDollar = priceGb.replaceAll(',', '.').replaceAll('£', '$');
 console.log(priceGb, `&`, priceDollar);
-// ReplaceAll was introduced in ES2021 start
+// ReplaceAll was introduced in ES2021 end
